@@ -6,10 +6,10 @@ Agent Skills 研修で使用するサンプルスキル集です。
 | ディレクトリ | 用途 | 本数 |
 |---|---|---|
 | [`chatgpt-project/`](#chatgpt-project--構成パターンを学ぶ5本) | 構成パターンを学ぶ教材。ChatGPT Projects で体験する題材と対応 | 5 |
-| [`.opencode/skills/`](#opencodeskills--業務そのまま使える7本) | OpenCode に置いてそのまま動かす業務サンプル | 7 |
+| [`antigravity-skills/`](#antigravity-skills--業務でそのまま使える7本) | Antigravity に置いてそのまま動かす業務サンプル | 7 |
 
 SKILL.md の書式はどちらも同じです。ChatGPT Projects で作ったものを
-`.opencode/skills/` に置けばそのまま動きます（逆も同様）。
+Antigravity のスキルフォルダに置けばそのまま動きます（逆も同様）。
 
 ---
 
@@ -26,7 +26,7 @@ SKILL.md の書式はどちらも同じです。ChatGPT Projects で作ったも
 | `proposal-doc` | 顧客・社内向けの提案書・企画書を作成する | `references/` + `assets/` × 2 | 複数アセットの使い方 |
 | `social-media-post` | X・LinkedIn等のビジネスSNS投稿文を作成する | `references/` + `assets/` + `scripts/` | フル活用パターン |
 
-## `.opencode/skills/` — 業務でそのまま使える7本
+## `antigravity-skills/` — 業務でそのまま使える7本
 
 構成パターンの学習用ではなく、**実務にそのまま近い粒度**で書かれたサンプルです。
 `complaint-email` と `weekly-report` は `chatgpt-project/` にも同名のものがありますが、
@@ -46,14 +46,14 @@ SKILL.md の書式はどちらも同じです。ChatGPT Projects で作ったも
 
 ### 使い方
 
-`.opencode/skills/` の中身を、OpenCode が読み込むフォルダにコピーします。
+`antigravity-skills/` の中から使いたいスキルのフォルダを、Antigravity が読み込むフォルダにコピーします。
 
 ```
-~/.config/opencode/skills/<スキル名>/
+~/.gemini/config/skills/<スキル名>/
 ```
 
-OpenCode は起動時にこのフォルダを自動でスキャンするため、
-置くだけで指示の内容に応じて適切なスキルが選ばれます。
+Windows では `C:\Users\<ユーザー名>\.gemini\config\skills\<スキル名>\` です。
+Antigravity の入力欄で `/スキル名` と入力すると呼び出せます。
 
 ---
 

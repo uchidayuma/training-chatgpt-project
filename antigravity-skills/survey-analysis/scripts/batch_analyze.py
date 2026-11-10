@@ -57,10 +57,10 @@ def write_result(output_dir: Path, original_file: Path, result_text: str) -> Non
 def analyze_with_agent(prompt: str) -> str:
     """
     エージェント（AI）にプロンプトを送信して結果を受け取る。
-    実際の実行は OpenCode のエージェントが担当する。
+    実際の実行は Antigravity のエージェントが担当する。
     このスクリプトはプロンプトを標準出力に書き出し、エージェントに処理させる。
     """
-    # OpenCode 環境では、このスクリプトをエージェントが読み込み、
+    # Antigravity 環境では、このスクリプトをエージェントが読み込み、
     # 各ファイルのプロンプトを順次処理する。
     # スタンドアロン実行時は、プロンプトをそのまま返す（デバッグ用）。
     return f"[未処理] 以下のプロンプトをエージェントに渡してください:\n\n{prompt}"
